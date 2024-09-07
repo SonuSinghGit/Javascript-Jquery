@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>multiple-event</title>
+        <script src="jquery-3.6.4.js"></script>
+</head>
+<body>
+    <p id="p1" style="background-color: aqua;">This is a paragraph</p>
+
+    <button id="btn1">button 1</button>
+    <button id="btn2">button 2</button>
+    <div id="div1" style="background-color:red; height:200px; width:200px">
+
+    </div>   
+
+    <script>
+        $("#btn1").click(function(){
+            $("#div1").focus();
+
+        });
+        $("#btn2").click(function(){
+            $("#div1").blur();
+            
+        });
+    </script>
+</body>
+</html>

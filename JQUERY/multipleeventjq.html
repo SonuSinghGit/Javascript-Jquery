@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>multiple-event</title>
+        <script src="jquery-3.6.4.js"></script>
+</head>
+<body>
+    <p id="p1">This is a paragraph</p>
+
+    <button id="btn">click</button><br><br>
+    <div id="div1" style="background-color: aqua; height:200px; width:200px">
+
+    </div>   
+
+    <script>
+        $("#div1").on({
+            click: function(){
+                $(this).css("background-color","red");
+            },
+            mouseenter:function(){
+                $(this).css("background-color","blue");
+
+            },
+            mouseleave:function(){
+                $(this).css("background-color","yellow");
+
+            }
+        });
+    </script>
+</body>
+</html>

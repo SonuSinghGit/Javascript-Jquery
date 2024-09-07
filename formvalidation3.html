@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>formvalidation</title>
+    </head>
+<body>
+  <h1>Login Form</h1>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value; 
+var cpassword= document.myform.cpassword.value;
+var phoneno= document.myform.phoneno.value;
+
+if (name==null || name=="")
+{  
+  alert("Name can't be blank");
+  return false;  
+}
+if(password.length<6)
+{  
+  alert("Password must be at least 6 characters:");  
+  return false; 
+   
+}
+if(cpassword !=password)
+{  
+  alert("confirm password can't match with your password:");  
+  return false;  
+}
+if(phoneno.length==""||phoneno.length!=10)
+{  
+  alert("please enter a valid mobile number:");
+  return false;  
+}
+gender=document.getElementById('male')
+{
+  if(male)
+  alert('please choose your gender:')
+}
+
+}  
+</script>  
+<body>
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/><br> 
+Password: <input type="password" name="password"><br/><br> 
+confirm:<input type="password" name="cpassword"><br><br>
+Email:<input type="email" name="email"><br><br>
+phone:<input type="number" name="phoneno" value="phone"><br><br>
+gender:<input type="radio" name="gender" value="m" id="male">male
+      <input type="radio" name="gender" value="f" id="female">female<br><br>
+qualification:<select>
+  <option type="select">select your qualification</option>
+  <option>10th</option>
+  <option>12th</option>
+  <option>B.tech</option>
+  <option>M.tech</option>
+</select><br><br>
+
+<input type="submit" value="submit"> 
+</form> 
+</body>
+</html>
+
+ 

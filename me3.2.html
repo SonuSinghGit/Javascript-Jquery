@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>change html attribute</title>
+</head>
+<body>
+
+    <img id="image" src="image1.jpg" width="500" height="250">
+    <br>
+
+    <button type="button" onclick="change()">change</button>
+    <button type="button" onclick="reverse()">Reverse</button>
+
+</body>
+<script>
+    function change(){
+    document.getElementById("image").src="image2..jpg";
+    }
+
+    function reverse(){
+        document.getElementById("image").src="image1.jpg";   
+        }    
+</script>
+<h2>The privious image was mountain view that is replaced by flying bird image.</h2>
+
+</html>

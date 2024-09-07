@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>multiple-event</title>
+        <script src="jquery-3.6.4.js"></script>
+</head>
+<body>
+    <p id="p1">This is a paragraph</p>
+
+    <button id="btn1">button 1</button>
+    <button id="btn2">button 2</button>
+    <button id="btn3">button 3</button><br><br>
+    <div id="div1" style="background-color:yellow; height:200px; width:200px">
+
+    </div>   
+
+    <script>
+        $("#btn1").click(function(){
+            $("#div1").slideUp(2000);
+
+        });
+        $("#btn2").click(function(){
+            $("#div1").slideDown(2000);
+
+        });
+        $("#btn3").click(function(){
+            $("#div1").stop();
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>form validation</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #form{
+            background-color: white;
+            padding:50px;
+            text-align: center;
+
+        }
+        h2{
+            margin: 0px 0px 0px 0px;
+        }
+        input{
+            width: 200px;
+            margin: 10px 10px;
+            padding: 10px;
+        }
+        input[type="submit"]{
+            width: 222px;
+            background-color: aqua;
+            border: 0px;
+            color: white;
+        }
+        .error{
+            color: red;
+            margin: 0%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h2>Login Form</h2>
+        <form action=""  onsubmit="return validateform()">
+            <input type="text"  placeholder="user name" id="username">
+            <br><br>
+            <p id="usererror" class="error"></p>
+            <input type="password"  placeholder="password" id="password">
+            <br><br>
+            <p id="passerror" class="error"></p>
+            <input type="password"  placeholder="confirm password" id="cpassword">
+            <input type="submit"/>
+        </form>
+    </div>
+    <script>
+        var username =document.getElementById("username");
+        var password =document.getElementById("password");
+
+        function validateForm()
+        {
+            return true;
+        }
+    </script> 
+</body>
+</html>

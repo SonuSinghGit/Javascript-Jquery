@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>event</title>
+       <script src="jquery-3.6.4.js"></script>  
+</head>
+<body>
+    <p id="para">This is paragraph</p>
+    <button id="btn">button1</button>
+    <button id="btn2">button2</button>
+
+    <script>
+        $("#btn").click(function(){
+            $("#para").hide(2000);
+        });
+        $("#btn2").click(function(){
+            $("#para").stop();
+        });
+    </script>
+    
+</body>
+</html>

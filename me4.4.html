@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>focous</title>
+        <script src="jquery-3.6.4.js"></script>
+</head>
+<body>
+    <h2 id="p1" style="background-color: aqua;">this is first paragraph</h2>
+    <h2 id="p2" style="background-color:brown;">this is second paragraph</h2>
+    <button id="btn1"> button1</button>
+    <button id="btn2"> button2</button>
+    <script>
+        $("btn1").click(function(){
+            $("#p1").focusin();
+            
+        });
+        $("#btn2").focusout(function(){
+            $("#p2").focusout();
+           
+        });
+    </script>
+</body>
+</html>
